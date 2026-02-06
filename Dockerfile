@@ -39,6 +39,7 @@ RUN chmod +x /usr/local/bin/start-moltbot.sh
 
 # Copy default configuration template
 COPY moltbot.json.template /root/.clawdbot-templates/moltbot.json.template
+COPY clawdbot.json /root/.clawdbot/clawdbot.json
 
 # Copy custom skills
 COPY skills/ /root/clawd/skills/
