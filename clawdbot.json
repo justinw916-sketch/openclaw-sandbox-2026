@@ -1,0 +1,12 @@
+{
+    "agents": {
+          "defaults": {
+                  "workspace": "/root/clawd",
+                  "model": "claude-sonnet-3-5-20241022"
+          }
+    },
+    "gateway": {
+          "port": 18789,
+          "mode": "local"
+    }
+}
