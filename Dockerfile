@@ -1,4 +1,4 @@
-FROM docker.io/cloudflare/sandbox:0.7.0
+h2026-02-02-token-fix-rebuild    FROM docker.io/cloudflare/sandbox:0.7.0
 
 # Install Node.js 22 (required by clawdbot) and rsync (for R2 backup sync)
 # The base image has Node 20, we need to replace it with Node 22
@@ -33,7 +33,8 @@ RUN mkdir -p /root/.clawdbot \
     && mkdir -p /root/clawd/skills
 
 # Copy startup script
-# Build cache bust:2026-02-02-token-fix-rebuild
+# Build cache bust:fix-model-config-v2
+
 COPY start-moltbot.sh /usr/local/bin/start-moltbot.sh
 RUN chmod +x /usr/local/bin/start-moltbot.sh
 
